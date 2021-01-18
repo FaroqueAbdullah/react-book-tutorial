@@ -1,0 +1,19 @@
+.BookForm {
+  background-color: skyblue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box {
+  width: 70%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.my-button {
+  width: 100px;
+  height: 50px;
+}
