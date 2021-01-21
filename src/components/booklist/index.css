@@ -8,6 +8,14 @@
   height: 100vh;
 }
 
+.booklist-header {
+  display: flex;
+}
+
+.button-style {
+  height: 50px;
+}
+
 .book {
   border: 2px solid black;
   width: 90%;

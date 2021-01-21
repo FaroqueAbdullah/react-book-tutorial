@@ -9,8 +9,16 @@ function App() {
 
   const [bookList, setBookList] = useState([])
 
+  const removebook = (index) => {
+    setBookList(bookList.filter( (data, i) => i !== index))
+  }
+
   const addBookDetais = (data) => {
     setBookList(bookList.concat(data))
+  }
+
+  const removeAllbooks = () => {
+    setBookList([])
   }
 
   return (
@@ -20,7 +28,7 @@ function App() {
           <BookForm onBookSubmit={(data) => addBookDetais(data)}/> 
         </div>
         <div className="book-list">
-          <BookList bookList={bookList}/>
+          <BookList bookList={bookList} removebook={(index) => removebook(index)} removeAllbooks={() => removeAllbooks()}/>
         </div>
       </div>
     </div>
